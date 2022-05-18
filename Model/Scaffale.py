@@ -16,3 +16,8 @@ class Scaffale:
         else:
             print("Ripiano inesistente")
 
+    def contiene(self,ripiano):
+        if len(self.Ripiani[ripiano-1].Libri)>0:
+            print("il ripiano contiene ",len(self.Ripiani[ripiano-1].Libri),"libri")
+        else:
+            print("Il ripiano è ancora libero")
